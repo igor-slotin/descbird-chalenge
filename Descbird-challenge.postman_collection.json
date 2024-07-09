@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "fb015275-bd1a-459d-90a5-461540d51e29",
+		"name": "Descbird-challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8968004"
+	},
+	"item": [
+		{
+			"name": "Get bookings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Token",
+						"value": "Some weird token2"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update booking",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Token",
+						"value": "Some weird token2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startDateTime\": \"2024-07-16\",\n    \"parkingSpotId\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking/11",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create booking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Token",
+						"value": "Some weird token2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"parkingSpotId\": 2,\n    \"startDateTime\": \"2024-07-20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete booking",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Token",
+						"value": "Some weird token"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/booking/13",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:16.3-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=deskbird
+      - POSTGRES_USER=deskbirdlocaluser
+      - POSTGRES_PASSWORD=yRBfPjH8nKGH8YkGYhQ9ivtJaQ0mVh
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
